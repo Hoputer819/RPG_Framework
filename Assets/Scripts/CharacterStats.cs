@@ -36,14 +36,9 @@ public class Character : MonoBehaviour
         get { return magic_defense; }
     }
 
-    void Start()
+    protected virtual void Awake()
     {
         current_hp = hp;
         current_mp = mp;
-    }
-
-    void Update()
-    {
-        
     }
 }
