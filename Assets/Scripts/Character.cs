@@ -2,14 +2,46 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    //필드(체력,현재체력,마나,현재마나,방어력,마법방어력)
+    [Header("기본 스탯")]
+    [SerializeField] protected float hp;
+    [SerializeField] protected float mp;
+
+    [Header("방어력 스탯")]
+    [SerializeField] protected float defense;
+    [SerializeField] protected float magic_defense;
+
+    protected float current_hp;
+    protected float current_mp;
+
+    //프로퍼티(체력,현재체력,마나,현재마나,방어력,마법방어력)
+    public float Hp
     {
-        Debug.Log("캐릭터 생성됨");
-        Debug.Log("생성 위치: " + transform.position);
+        get { return hp; }
+    }
+    public float Current_Hp
+    {
+        get { return current_hp; }
+    }
+    public float Mp
+    {
+        get { return mp; }
+    }
+    public float Defense
+    {
+        get { return defense; }
+    }
+    public float Magic_Defense
+    {
+        get { return magic_defense; }
     }
 
-    // Update is called once per frame
+    void Start()
+    {
+        current_hp = hp;
+        current_mp = mp;
+    }
+
     void Update()
     {
         

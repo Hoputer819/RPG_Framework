@@ -369,6 +369,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 542334824badf6d4bba418e290823116, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Character
+  hp: 0
+  mp: 0
+  defense: 0
+  magic_defense: 0
 --- !u!4 &1957483682
 Transform:
   m_ObjectHideFlags: 0
