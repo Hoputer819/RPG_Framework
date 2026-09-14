@@ -1,11 +1,12 @@
 using UnityEngine;
 
-public class Character : MonoBehaviour
+public class CharacterStats : MonoBehaviour
 {
     //필드(체력,현재체력,마나,현재마나,방어력,마법방어력)
     [Header("기본 스탯")]
     [SerializeField] protected float hp;
     [SerializeField] protected float mp;
+    [SerializeField] protected float move_speed;
 
     [Header("방어력 스탯")]
     [SerializeField] protected float defense;
@@ -26,6 +27,10 @@ public class Character : MonoBehaviour
     public float Mp
     {
         get { return mp; }
+    }
+    public float Move_Speed
+    {
+        get { return move_speed;  }
     }
     public float Defense
     {
